@@ -107,11 +107,14 @@ atom-text-editor,
 	&.quoted.double.html > .punctuation {
 		color: #5d8f00;
 	}
-	.string-contents > .variable {
-		&,
-		.keyword,
-		.punctuation {
+	.string-contents {
+		.variable,
+		.punctuation,
+		.keyword.operator {
 			color: #de7a31;
+		}
+		.escape {
+			color: #dd2400;
 		}
 	}
 }
@@ -163,7 +166,8 @@ atom-text-editor,
 	&.tag {
 		color: #0045aa;
 	}
-	&.begin.php {
+	&.begin.section.php,
+	&.end.section.php {
 		color: #878787;
 	}
 }
@@ -229,6 +233,9 @@ atom-text-editor,
 }
 .variable{
 	color: #8735a5;
+	&.property {
+		color: #333;
+	}
 }
 
 // CSS Styles
