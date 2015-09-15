@@ -1,0 +1,11 @@
+{
+  "name": "atom-bright-light",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "A simple light syntax theme for Atom",
+  "repository": "https://github.com/indrimuska/atom-bright-light-syntax.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.40.0"
+  }
+}
