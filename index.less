@@ -40,7 +40,7 @@ atom-text-editor,
 			background-color: @syntax-gutter-background-color-selected;
 		}
 	}
-	
+
 	// Markdown
 	.source.gfm {
 		color: #444;
@@ -108,7 +108,11 @@ atom-text-editor,
 		color: #5d8f00;
 	}
 	.string-contents > .variable {
-		color: #de7a31 !important;
+		&,
+		.keyword,
+		.punctuation {
+			color: #de7a31;
+		}
 	}
 }
 .constant {
