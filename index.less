@@ -8,7 +8,9 @@ atom-text-editor,
 		color: @syntax-invisible-character-color;
 	}
 	.indent-guide {
-		color: @syntax-indent-guide-color;
+		box-shadow: none;
+		margin-right: -1px;
+		border-left: 1px dotted @syntax-indent-guide-color;
 	}
 	.wrap-guide {
 		background-color: @syntax-wrap-guide-color;
@@ -20,7 +22,7 @@ atom-text-editor,
 	.gutter .line-number.folded,
 	.gutter .line-number:after,
 	.fold-marker:after {
-		color: #e87b00;
+		color: #3e89e7;
 	}
 	.invisible {
 		color: #555;
@@ -84,7 +86,7 @@ atom-text-editor,
 	}
 }
 .comment {
-	color: #de7a31;
+	color: #ff8000;
 	font-style: normal;
 }
 .string {
@@ -105,7 +107,7 @@ atom-text-editor,
 	}
 	&.quoted.double.html,
 	&.quoted.double.html > .punctuation {
-		color: #5d8f00;
+		color: #56a500;
 	}
 	.string-contents {
 		.variable,
@@ -136,16 +138,10 @@ atom-text-editor,
 		color: rgba(143, 190, 0, 0.63);
 	}
 }
-.variable {
-	color: #008080;
-	&.parameter {
-		color: #606aa1;
-	}
-}
 
 // Keywords
 .keyword {
-	color: #0045aa;
+	color: #006ff8;
 	&.unit {
 		color: #458;
 	}
@@ -181,7 +177,7 @@ atom-text-editor,
 		color: #606aa1;
 	}
 	&.name.function {
-		color: #900;
+		color: #000;
 	}
 	&.name.tag {
 		color: #0045aa;
@@ -198,10 +194,13 @@ atom-text-editor,
 	&.constant,
 	&.function,
 	&.type {
-		color: #458;
+		color: #400080;
 	}
-	&.class {
+	&.class.php {
 		color: #008080;
+	}
+	&.class.js {
+		color: #007ab7;
 	}
 }
 .invalid {
@@ -228,13 +227,13 @@ atom-text-editor,
 		color: #0045aa;
 	}
 	&.function-call {
-		color: #099;
+		color: #3f6e7d;
 	}
 }
 .variable{
 	color: #8735a5;
 	&.property {
-		color: #333;
+		color: #000;
 	}
 }
 
@@ -252,4 +251,12 @@ atom-text-editor,
 	background-color: #c9c9c9;
 	opacity: 0.7;
 	border-bottom: 0 none;
+}
+
+// Folding
+.fold-marker:after {
+	font-size: 22px;
+	line-height: 0;
+	vertical-align: sub;
+	padding: 0;
 }
