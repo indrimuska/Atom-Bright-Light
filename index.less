@@ -1,10 +1,24 @@
 @import 'syntax-variables';
 
 .tree-view,
-.find-and-replace {
+.find-and-replace,
+.tab-bar .tab .title,
+.tab-bar .tab.active .title {
 	font-size: 11px !important;
 }
+.tab-bar,
+.tab-bar .tab {
+	line-height: 33px !important;
+	height: 33px !important;
+}
 
+.tree-view .project-root.project-root {
+	padding-top: 0 !important;
+}
+atom-pane-container atom-pane {
+	padding-top: 0 !important;
+	padding-right: 0 !important;
+}
 atom-text-editor,
 :host {
 	background-color: @syntax-background-color;
