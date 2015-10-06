@@ -1,5 +1,9 @@
 @import 'syntax-variables';
 
+.tree-view {
+	font-size: 11px !important;
+}
+
 atom-text-editor,
 :host {
 	background-color: @syntax-background-color;
@@ -90,7 +94,7 @@ atom-text-editor,
 	font-style: normal;
 }
 .string {
-	color: #dd2400;
+	color: #fb0000;
 }
 
 // String interpolation in Ruby, CoffeeScript, and others
@@ -116,7 +120,7 @@ atom-text-editor,
 			color: #de7a31;
 		}
 		.escape {
-			color: #dd2400;
+			color: #fb0000;
 		}
 	}
 }
@@ -160,7 +164,7 @@ atom-text-editor,
 }
 .punctuation {
 	&.tag {
-		color: #0045aa;
+		color: #0051bc;
 	}
 	&.begin.section.php,
 	&.end.section.php {
@@ -180,10 +184,10 @@ atom-text-editor,
 		color: #000;
 	}
 	&.name.tag {
-		color: #0045aa;
+		color: #0051bc;
 	}
 	&.other.attribute-name {
-		color: #007ab7;
+		color: #008cc6;
 		font-weight: normal;
 	}
 	&.name.filename.find-in-files {
@@ -194,13 +198,13 @@ atom-text-editor,
 	&.constant,
 	&.function,
 	&.type {
-		color: #400080;
+		color: #0051bc;
 	}
 	&.class.php {
 		color: #008080;
 	}
 	&.class.js {
-		color: #007ab7;
+		color: #008cc6;
 	}
 }
 .invalid {
@@ -224,14 +228,14 @@ atom-text-editor,
 		color: #75715e;
 	}
 	.type {
-		color: #0045aa;
+		color: #0051bc;
 	}
 	&.function-call {
 		color: #3f6e7d;
 	}
 }
 .variable{
-	color: #8735a5;
+	color: #ab31b4;
 	&.property {
 		color: #000;
 	}
